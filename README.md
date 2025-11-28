@@ -9,7 +9,7 @@ parameters grouped into the same categories defined by the existing `SUS_*` sets
 2. Run the scanner, pointing it at your input file and an output directory:
 
 ```powershell
-python sus-params.py -i urls.txt -o scan-output
+python sus-params-scanner.py -i urls.txt -o scan-output
 ```
 
 Only resolved hosts are scanned and matches are emitted as host-aware Markdown tables named
