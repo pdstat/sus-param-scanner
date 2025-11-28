@@ -3,6 +3,18 @@
 This repository now exposes a simple CLI built into `sus-params.py` that scans URLs for suspicious query
 parameters grouped into the same categories defined by the existing `SUS_*` sets.
 
+## Installation
+
+It's easiest to install the single dependency via `requirements.txt`. Inside a virtual environment (recommended),
+run:
+
+```powershell
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+The file currently pins `dnspython>=2.5.0`, which is required for the scanner's DNS lookups.
+
 ## Usage
 
 1. Prepare a newline-separated list of URLs in a plaintext file (comments beginning with `#` are ignored).
